@@ -67,7 +67,7 @@ namespace MarsAdvTaskNUnit.Utils
                     logstatus = Status.Fail;
                     DateTime time = DateTime.Now;
                     String fileName = "Screenshot_" + time.ToString("h_mm_ss") + ".png";
-                    //String screenShotPath = SaveScreenShotClass.SaveScreenshot1(testDriver, fileName);
+                    String screenShotPath = SaveScreenShotClass.SaveScreenshot1(testDriver, fileName);
                     var screenShotPath1 = SaveScreenShotClass.SaveScreenshot2(testDriver, fileName);
                     test.Log(Status.Fail, "Fail");
                     test.Log(Status.Fail, "Snapshot below: " + test.AddScreenCaptureFromPath("Screenshots\\" + fileName));
@@ -83,7 +83,7 @@ namespace MarsAdvTaskNUnit.Utils
                     logstatus = Status.Pass;
                     DateTime time1 = DateTime.Now;
                     String fileName1 = "Screenshot_" + time1.ToString("h_mm_ss") + ".png";
-                    //String screenShotPath3 = SaveScreenShotClass.SaveScreenshot1(testDriver, fileName1);
+                    String screenShotPath3 = SaveScreenShotClass.SaveScreenshot1(testDriver, fileName1);
                     var screenShotPath2 = SaveScreenShotClass.SaveScreenshot2(testDriver, fileName1);
                     test.Log(Status.Pass, "Pass");
                     test.Log(Status.Pass, "Snapshot below: " + test.AddScreenCaptureFromPath("Screenshots\\" + fileName1));
