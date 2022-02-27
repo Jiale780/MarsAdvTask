@@ -19,7 +19,7 @@ namespace MarsAdvTaskNUnit.Pages.Profile
         public ProfileSkill(IWebDriver testDriver)
         {
             this.testDriver = testDriver;
-            ExcelLibHelpers.PopulateInDataCollection((MarsResource.ExcelPath), "ProfileSkills");
+            ExcelLibHelpers.PopulateInDataCollection((MarsResource.ExcelPath), "ProfileSkill");
         }
         private IWebElement notification => testDriver.FindElement(By.XPath("//div[@class='ns-box-inner']"));
 
@@ -43,7 +43,6 @@ namespace MarsAdvTaskNUnit.Pages.Profile
         {
             this.testDriver = testDriver;
             // Click on the "Add new" button of skills
-            //WaitHelper.WaitForElementPresent(testDriver, "XPath", "//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[3]/div/div[2]/div/div/span/input[1]", 4);
             addSkill.Click();
             testDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
         }

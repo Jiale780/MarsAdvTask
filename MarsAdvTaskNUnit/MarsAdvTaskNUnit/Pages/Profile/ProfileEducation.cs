@@ -172,10 +172,36 @@ namespace MarsAdvTaskNUnit.Pages.Profile
             }
         }
 
+        public void DeleteEducationBtn(IWebDriver testDriver)
+        {
+            // Click on the "Delete" button of language
+            WaitHelper.WaitForElementToBeClickable(testDriver, "XPath", "//i[@class='remove icon']", 4);
+            deleteEducation.Click();
+            testDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
+        }
 
+        public void ValidateDeleteEducationDetails(IWebDriver testDriver)
+        {
+            try
+            {
+                WaitHelper.WaitForElementPresent(testDriver, "ClassName", "ns-box-inner", 2);
+                notificationText = notification.Text;
+                Assert.AreEqual(notification.Text, "Education entry successfully removed");
+                test.Log(Status.Pass, "Education has been deleted successfully");
+            }
+            catch
+            {
+                var NotificationText = notification.Text;
+                var status = TestContext.CurrentContext.Result.Outcome.Status;
+                var stackTrace = "<pre>" + TestContext.CurrentContext.Result.StackTrace + "</pre>";
+                var errorMessage = TestContext.CurrentContext.Result.Message;
 
-
-
-
+                if (status == TestStatus.Failed)
+                {
+                    test.Log(Status.Fail, "Error Message :" + NotificationText);
+                    test.Log(Status.Fail, "Snapshot below: " + CommonMethods.SaveScreenShotClass.SaveScreenshot2(testDriver, "Education entry unsuccessfully removed"));
+                }
+            }
+        }
     }
 }
