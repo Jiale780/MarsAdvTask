@@ -23,9 +23,9 @@ namespace MarsAdvTaskNUnit.Pages.Profile
 
         private IWebElement descriptionIcon => testDriver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/div/div/div/h3/span/i"));
 
-        public IWebElement addDescriptTextBox => testDriver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/div/div/form/div/div/div[2]/div[1]/textarea"));
+        private IWebElement addDescriptTextBox => testDriver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/div/div/form/div/div/div[2]/div[1]/textarea"));
 
-        public IWebElement notification => testDriver.FindElement(By.XPath("//div[@class='ns-box-inner']"));
+        private IWebElement notification => testDriver.FindElement(By.XPath("//div[@class='ns-box-inner']"));
 
         private IWebElement saveButton => testDriver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/div/div/form/div/div/div[2]/button"));
 

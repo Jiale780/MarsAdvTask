@@ -33,7 +33,7 @@ namespace MarsAdvTaskNUnit.Pages.Profile
 
         private IWebElement addLanguageBtn => testDriver.FindElement(By.XPath("//input[@value='Add']"));
 
-        public IWebElement notification => testDriver.FindElement(By.XPath("//div[@class='ns-box-inner']"));
+        private IWebElement notification => testDriver.FindElement(By.XPath("//div[@class='ns-box-inner']"));
 
         private IWebElement savedName => testDriver.FindElement(By.CssSelector("tbody tr td:nth-child(1)"));
 

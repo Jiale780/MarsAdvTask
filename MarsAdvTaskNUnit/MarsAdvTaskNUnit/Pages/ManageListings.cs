@@ -20,28 +20,28 @@ namespace MarsAdvTaskNUnit.Pages
         }
 
         // Defining all the Web Element                                  
-        public IWebElement category => testDriver.FindElement(By.XPath("//*[@id='listing-management-section']/div[2]/div[1]/div[1]/table/tbody/tr[1]/td[2]"));
-        public IWebElement title => testDriver.FindElement(By.XPath("//*[@id='listing-management-section']/div[2]/div[1]/div[1]/table/tbody/tr[1]/td[3]"));
-        public IWebElement description => testDriver.FindElement(By.XPath("//*[@id='listing-management-section']/div[2]/div[1]/div[1]/table/tbody/tr[1]/td[4]"));
-        public IWebElement serviceType => testDriver.FindElement(By.XPath("//*[@id='listing-management-section']/div[2]/div[1]/div[1]/table/tbody/tr[1]/td[5]"));
-        public IWebElement skillTrade => testDriver.FindElement(By.XPath("//*[@id='listing-management-section']/div[2]/div[1]/div[1]/table/tbody/tr[1]/td[6]/i"));
-        public IWebElement credit => testDriver.FindElement(By.XPath("//*[@id='listing-management-section']/div[2]/div[1]/div[1]/table/tbody/tr[1]/td[6]/i"));
-        public IList<IWebElement> active => testDriver.FindElements(By.XPath("//*[@id='listing-management-section']/div[2]/div[1]/div[1]/table/tbody/tr[1]/td[7]/div/input"));
-        public IWebElement searchText => testDriver.FindElement(By.XPath("//*[@id='service-detail-section']/div[1]/div[1]/input"));
-        public IWebElement manageListingNavigation => testDriver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[1]/div/a[3]"));
-        public IWebElement editManageListBtn => testDriver.FindElement(By.XPath("//*[@id='listing-management-section']/div[2]/div[1]/div[1]/table/tbody/tr[1]/td[8]/div/button[2]/i"));
-        public IWebElement deleteManageListBtn => testDriver.FindElement(By.XPath("//*[@id='listing-management-section']/div[2]/div[1]/div[1]/table/tbody/tr/td[8]/div/button[3]/i"));
-        public IWebElement deleteManageListBtn1 => testDriver.FindElement(By.XPath("/html/body/div[2]/div/div[3]/button[2]"));
-        public IWebElement deleteManageListBtn2 => testDriver.FindElement(By.XPath("/html/body/div[2]/div/div[3]/button[1]"));
-        public IWebElement viewBtn => testDriver.FindElement(By.XPath("//*[@id='listing-management-section']/div[2]/div[1]/div[1]/table/tbody/tr[1]/td[8]/div/button[1]"));
-        public IWebElement bodyContent => testDriver.FindElement(By.XPath("//*[@id='service-detail-section']/div[2]/div/div[2]/div[1]/div[1]/div[2]"));
-        public IWebElement category1 => testDriver.FindElement(By.XPath("//*[@id='service-detail-section']/div[2]/div/div[2]/div[1]/div[1]/div[2]/div[2]/div/div/div[1]/div/div/div/div[2]"));
-        public IWebElement subCategory1 => testDriver.FindElement(By.XPath("//*[@id='service-detail-section']/div[2]/div/div[2]/div[1]/div[1]/div[2]/div[2]/div/div/div[2]/div/div[2]/div/div[2]"));
-        public IWebElement serviceType1 => testDriver.FindElement(By.XPath("//*[@id='service-detail-section']/div[2]/div/div[2]/div[1]/div[1]/div[2]/div[2]/div/div/div[2]/div/div[3]/div/div[2]"));
-        public IWebElement startDate1 => testDriver.FindElement(By.XPath("//*[@id='service-detail-section']/div[2]/div/div[2]/div[1]/div[1]/div[2]/div[2]/div/div/div[3]/div/div[1]/div/div[2]"));
-        public IWebElement endDate1 => testDriver.FindElement(By.XPath("//*[@id='service-detail-section']/div[2]/div/div[2]/div[1]/div[1]/div[2]/div[2]/div/div/div[3]/div/div[2]/div/div[2]"));
-        public IWebElement locationType1 => testDriver.FindElement(By.XPath("//*[@id='service-detail-section']/div[2]/div/div[2]/div[1]/div[1]/div[2]/div[2]/div/div/div[3]/div/div[3]/div/div[2]"));
-        public IWebElement skillTrade1 => testDriver.FindElement(By.XPath("//*[@id='service-detail-section']/div[2]/div/div[2]/div[1]/div[1]/div[2]/div[2]/div/div/div[4]/div[2]/div/div/div[2]/span"));
+        private IWebElement category => testDriver.FindElement(By.XPath("//*[@id='listing-management-section']/div[2]/div[1]/div[1]/table/tbody/tr[1]/td[2]"));
+        private IWebElement title => testDriver.FindElement(By.XPath("//*[@id='listing-management-section']/div[2]/div[1]/div[1]/table/tbody/tr[1]/td[3]"));
+        private IWebElement description => testDriver.FindElement(By.XPath("//*[@id='listing-management-section']/div[2]/div[1]/div[1]/table/tbody/tr[1]/td[4]"));
+        private IWebElement serviceType => testDriver.FindElement(By.XPath("//*[@id='listing-management-section']/div[2]/div[1]/div[1]/table/tbody/tr[1]/td[5]"));
+        private IWebElement skillTrade => testDriver.FindElement(By.XPath("//*[@id='listing-management-section']/div[2]/div[1]/div[1]/table/tbody/tr[1]/td[6]/i"));
+        private IWebElement credit => testDriver.FindElement(By.XPath("//*[@id='listing-management-section']/div[2]/div[1]/div[1]/table/tbody/tr[1]/td[6]/i"));
+        private IList<IWebElement> active => testDriver.FindElements(By.XPath("//*[@id='listing-management-section']/div[2]/div[1]/div[1]/table/tbody/tr[1]/td[7]/div/input"));
+        private IWebElement searchText => testDriver.FindElement(By.XPath("//*[@id='service-detail-section']/div[1]/div[1]/input"));
+        private IWebElement manageListingNavigation => testDriver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[1]/div/a[3]"));
+        private IWebElement editManageListBtn => testDriver.FindElement(By.XPath("//*[@id='listing-management-section']/div[2]/div[1]/div[1]/table/tbody/tr[1]/td[8]/div/button[2]/i"));
+        private IWebElement deleteManageListBtn => testDriver.FindElement(By.XPath("//*[@id='listing-management-section']/div[2]/div[1]/div[1]/table/tbody/tr/td[8]/div/button[3]/i"));
+        private IWebElement deleteManageListBtn1 => testDriver.FindElement(By.XPath("/html/body/div[2]/div/div[3]/button[2]"));
+        private IWebElement deleteManageListBtn2 => testDriver.FindElement(By.XPath("/html/body/div[2]/div/div[3]/button[1]"));
+        private IWebElement viewBtn => testDriver.FindElement(By.XPath("//*[@id='listing-management-section']/div[2]/div[1]/div[1]/table/tbody/tr[1]/td[8]/div/button[1]"));
+        private IWebElement bodyContent => testDriver.FindElement(By.XPath("//*[@id='service-detail-section']/div[2]/div/div[2]/div[1]/div[1]/div[2]"));
+        private IWebElement category1 => testDriver.FindElement(By.XPath("//*[@id='service-detail-section']/div[2]/div/div[2]/div[1]/div[1]/div[2]/div[2]/div/div/div[1]/div/div/div/div[2]"));
+        private IWebElement subCategory1 => testDriver.FindElement(By.XPath("//*[@id='service-detail-section']/div[2]/div/div[2]/div[1]/div[1]/div[2]/div[2]/div/div/div[2]/div/div[2]/div/div[2]"));
+        private IWebElement serviceType1 => testDriver.FindElement(By.XPath("//*[@id='service-detail-section']/div[2]/div/div[2]/div[1]/div[1]/div[2]/div[2]/div/div/div[2]/div/div[3]/div/div[2]"));
+        private IWebElement startDate1 => testDriver.FindElement(By.XPath("//*[@id='service-detail-section']/div[2]/div/div[2]/div[1]/div[1]/div[2]/div[2]/div/div/div[3]/div/div[1]/div/div[2]"));
+        private IWebElement endDate1 => testDriver.FindElement(By.XPath("//*[@id='service-detail-section']/div[2]/div/div[2]/div[1]/div[1]/div[2]/div[2]/div/div/div[3]/div/div[2]/div/div[2]"));
+        private IWebElement locationType1 => testDriver.FindElement(By.XPath("//*[@id='service-detail-section']/div[2]/div/div[2]/div[1]/div[1]/div[2]/div[2]/div/div/div[3]/div/div[3]/div/div[2]"));
+        private IWebElement skillTrade1 => testDriver.FindElement(By.XPath("//*[@id='service-detail-section']/div[2]/div/div[2]/div[1]/div[1]/div[2]/div[2]/div/div/div[4]/div[2]/div/div/div[2]/span"));
 
         public void EditManageListings()
         {
