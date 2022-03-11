@@ -21,6 +21,10 @@ namespace MarsAdvTaskNUnit.Pages
 
         private IWebElement ManageListing => testDriver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[1]/div/a[3]"));
 
+        private IWebElement MarsLogo => testDriver.FindElement(By.XPath("//*[@id='account-profile-section']/div/div[1]/a"));
+
+        private IWebElement searchBtn => testDriver.FindElement(By.XPath("//*[@id='home']/div/div/div[3]/div/button"));
+
         public void NaviHomePage(IWebDriver testDriver)
         {
             this.testDriver = testDriver;
@@ -67,6 +71,14 @@ namespace MarsAdvTaskNUnit.Pages
             // Navigate to the Manage Listings Tab
             this.testDriver = testDriver;
             ManageListing.Click();
+        }
+
+        public void NavigateMarsLogo(IWebDriver testDriver)
+        {
+            // Navigate to the Mars Logo and the search button in the home page
+            this.testDriver = testDriver;
+            MarsLogo.Click();
+            searchBtn.Click();
         }
     }
 }
