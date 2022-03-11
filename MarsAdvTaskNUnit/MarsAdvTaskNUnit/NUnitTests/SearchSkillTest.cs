@@ -9,7 +9,7 @@ namespace MarsAdvTaskNUnit.NUnitTests
     class SearchSkillTest : CommonDriver
     {
         [Test, Order(1), Category("Search Skill")]
-        public void SearchSkillTest1()
+        public void SearchSkillCategoryTest()
         {
             test = extent.CreateTest("Validate Search Skill using Category");
             test.Log(Status.Info, "Browser Initialisation");
@@ -26,7 +26,7 @@ namespace MarsAdvTaskNUnit.NUnitTests
         }
 
         [Test, Order(2), Category("Search Skill")]
-        public void SearchSkillSubTest()
+        public void SearchSkillSubCategoryTest()
         {
             test = extent.CreateTest("Validate Search Skill using Sub Category");
             test.Log(Status.Info, "Browser Initialisation");
