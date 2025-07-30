@@ -12,12 +12,12 @@ Task 2: <br />
 ●	Create and update of the performance testing for all the folders and files. Submit the project for feedback. <br />
 
 Solution: <br />
-● Created the new Solution using MarsAdvTask Solution File as a base.
-● Created Profile Pages like ProfileViewPage.cs, ProfileLangauge.cs, ProfileDescription.cs, ProfileEducation.cs & etc to implement codes in the Profile folder.
-● Created Login Page like LoginPage.cs to implement codes.
-● Created with all the test scenarios from the Test Cases in Task 1 which can be found and called MarsCompetitiveTask/Test Cases Share Skill & Manage Listing.xlsx.
-● Created Search Skill Page like SearchSkill.cs to implement codes.
-● Created Chat Page like ChatPage.cs and Notification Page like Notification.cs to implement codes.
+● Created the new Solution using MarsAdvTask Solution File as a base. <br />
+● Created Profile Pages like ProfileViewPage.cs, ProfileLangauge.cs, ProfileDescription.cs, ProfileEducation.cs & etc to implement codes in the Profile folder. <br />
+● Created Login Page like LoginPage.cs to implement codes. <br />
+● Created with all the test scenarios from the Test Cases in Task 1 which can be found and called MarsCompetitiveTask/Test Cases Share Skill & Manage Listing.xlsx. <br />
+● Created Search Skill Page like SearchSkill.cs to implement codes. <br />
+● Created Chat Page like ChatPage.cs and Notification Page like Notification.cs to implement codes. <br />
 ● Based on the all the test orders generated NUnits which can be found in NUnits under NUnitTests folder. <br />
 
 Limitations: <br />
