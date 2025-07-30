@@ -17,6 +17,7 @@ Solution: <br />
 ● Created Login Page like LoginPage.cs to implement codes.
 ● Created with all the test scenarios from the Test Cases in Task 1 which can be found and called MarsCompetitiveTask/Test Cases Share Skill & Manage Listing.xlsx.
 ● Created Search Skill Page like SearchSkill.cs to implement codes.
+● Created Chat Page like ChatPage.cs and Notification Page like Notification.cs to implement codes.
 ● Based on the all the test orders generated NUnits which can be found in NUnits under NUnitTests folder. <br />
 
 Limitations: <br />
